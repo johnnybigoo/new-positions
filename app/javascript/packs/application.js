@@ -14,3 +14,11 @@ import './src/application.scss'
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+$(function () {
+  'use strict'
+
+  $('[data-toggle="offcanvas"]').on('click', function () {
+    $('.offcanvas-collapse').toggleClass('open')
+  })
+})
