@@ -21,7 +21,7 @@ gem 'simple_form'
 gem 'devise'
 gem 'haml'
 gem "haml-rails", "~> 2.0"
-
+#gem 'image_processing'
 
 
 gem 'bootsnap', '>= 1.4.4', require: false
