@@ -13,3 +13,6 @@
     = render 'shared/topbar'
     %main.container{:role => "main"}
       = yield
+    %footer
+      %p Sistema desenvolvido por Jones - com base nos videos do Programador Showzim
+      %p= "Desde #{Time.new.year}"
