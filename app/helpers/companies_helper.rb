@@ -7,3 +7,5 @@ module CompaniesHelper
     end
   end
 end
+
+#video 08 - Bugfix new company
