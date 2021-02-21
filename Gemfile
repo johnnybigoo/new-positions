@@ -11,9 +11,9 @@ gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 
-#gem 'kaminari'
-#gem 'kaminari-bootstrap'
-#gem 'ransack'
+gem 'kaminari'
+gem 'bootstrap4-kaminari-views'
+gem 'ransack'
 #gem 'select2-rails'
 
 gem 'figaro'
