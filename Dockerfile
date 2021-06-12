@@ -5,5 +5,5 @@ RUN apt-get update -qq && apt-get install -y build-essential nodejs libpq-dev po
 RUN mkdir /usr/src/openvagas
 WORKDIR /usr/src/openvagas
 ADD . /usr/src/openvagas
-RUN gem install bundler -v 2.1.4
+RUN gem install bundler -v 2.2.3
 RUN bundle install
