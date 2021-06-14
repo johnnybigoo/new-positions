@@ -1,3 +1,23 @@
+-# !!!
+-# %html
+-#   %head
+-#     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+-#     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
+-#     %title Newpositions
+-#     %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+-#     = csrf_meta_tags
+-#     = csp_meta_tag
+-#     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+-#     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+-#   %body
+-#     = render 'shared/topbar'
+-#     %main.container{:role => "main"}
+-#     = render partial: 'shared/flash_message'
+-#       = yield
+-#     %footer
+-#       %p Sistema desenvolvido por Jones - com base nos videos do Programador Showzim
+-#       %p= "Desde #{Time.new.year}"
+
 !!!
 %html
   %head
@@ -12,8 +32,8 @@
   %body
     = render 'shared/topbar'
     %main.container{:role => "main"}
-    = render partial: 'shared/flash_message'
+      = render partial: 'shared/flash_message'
       = yield
     %footer
       %p Sistema desenvolvido por Jones - com base nos videos do Programador Showzim
-      %p= "Desde #{Time.new.year}"
+      %p= "Desde de #{Time.new.year}"
