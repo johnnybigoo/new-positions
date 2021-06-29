@@ -10,6 +10,9 @@ import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
 window.Swal = Swal
 
+global.$ = global.jQuery = jQuery;
+window.$ = window.jQuery = jQuery;
+
 
 $(function () {
   'use strict'
