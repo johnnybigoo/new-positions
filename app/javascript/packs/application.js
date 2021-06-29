@@ -13,7 +13,6 @@ window.Swal = Swal
 global.$ = global.jQuery = jQuery;
 window.$ = window.jQuery = jQuery;
 
-
 $(function () {
   'use strict'
 
