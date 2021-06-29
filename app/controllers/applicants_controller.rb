@@ -1,11 +1,9 @@
 # frozen_string_literal: true
 
 class ApplicantsController < ApplicationController
-  def index
-  end
+  def index; end
 
-  def new
-  end
+  def new; end
 
   def create
     @applicant = current_user.applicants.new(applicant_params)
@@ -22,6 +20,7 @@ class ApplicantsController < ApplicationController
         format.js { render partial: 'applicants/new' }
       end
     end
+  end
 
   private
 
