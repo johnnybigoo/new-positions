@@ -48,6 +48,9 @@ docker ps
 ```
 
 - 7.2 Para fazer o console do terminal ser o log do sistema, execute o comando abaixo e pegue o CONTAINER_ID do comando anterios (7.1)
+
+Execute Docker ps para obter o ID do Container
+Obs: Volte para a pasta Raiz
 ```
 docker attach CONTAINER_ID
 ```
