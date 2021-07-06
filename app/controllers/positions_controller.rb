@@ -1,5 +1,5 @@
 class PositionsController < ApplicationController
-  before_action :set_company, :set_i18n_careers, :set_i18n_contracts, expect: [:public_position]
+  before_action :set_company, :set_i18n_careers, :set_i18n_contracts, except: [:public_position]
   before_action :set_position, only: [:edit, :show, :update]
 
   def index

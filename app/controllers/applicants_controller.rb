@@ -4,9 +4,9 @@ class ApplicantsController < ApplicationController
   before_action :set_position, only: [:index]
   def index
     @applicants = @position.applicants
-      respond_to do |format|
-        format.html
-        format.csv { send_data @position.applicants.as_csv }
+    respond_to do |format|
+      format.html
+      format.csv { send_data @position.applicants.as_csv }
     end
   end
 
@@ -38,7 +38,6 @@ class ApplicantsController < ApplicationController
       redirect_to positions_path
     end
   end
-
 
   def applicant_params
     params.require(:applicant).permit(:name, :email, :phone, :resume, :position_id)
