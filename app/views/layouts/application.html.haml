@@ -1,30 +1,9 @@
--# !!!
--# %html
--#   %head
--#     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
--#     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
--#     %title Newpositions
--#     %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
--#     = csrf_meta_tags
--#     = csp_meta_tag
--#     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
--#     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
--#   %body
--#     = render 'shared/topbar'
--#     %main.container{:role => "main"}
--#     = render partial: 'shared/flash_message'
--#       = yield
--#     %footer
--#       %p Sistema desenvolvido por Jones - com base nos videos do Programador Showzim
--#       %p= "Desde #{Time.new.year}"
-
 !!!
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
-    %title Newpositions
-    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    %title OpenVagas
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
@@ -35,8 +14,9 @@
       = render partial: 'shared/flash_message'
       = yield
     %footer
-      %p Sistema desenvolvido por Jones - com base nos videos do Programador Showzim
+      %p Sistema desenvolvido por Programador Showzim
       %p= "Desde de #{Time.new.year}"
+
   #modal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "modalLabel", :tabindex => "-1"}
     .modal-dialog.modal-lg
       .modal-content
