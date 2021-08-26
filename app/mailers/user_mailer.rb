@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 class UserMailer < ApplicationMailer
-    def welcome(user)
-      @user = user
-      mail to: @user.email, subject: 'Bem vindo ao Open Vagas'
+  def welcome(user)
+    @user = user
+    mail to: @user.email, subject: 'Bem vindo ao Open Vagas'
   end
 
   def export_resume(user, position)
