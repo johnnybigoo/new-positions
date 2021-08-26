@@ -16,12 +16,13 @@ gem 'bootstrap4-kaminari-views'
 gem 'ransack'
 #gem 'select2-rails'
 
+gem 'rubyzip'
+
 gem 'figaro'
 gem 'simple_form'
 gem 'devise'
 gem 'haml'
 gem "haml-rails", "~> 2.0"
-gem "ruby-zip"
 #gem 'image_processing'
 
 
